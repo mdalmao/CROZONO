@@ -320,7 +320,7 @@ def hardware_setup():
 	return iface_mon
 
 def banner():
-	print '''
+	print ('''
 
        ____   ____     ___    _____   ___    _   _    ___  
       / ___| |  _ \   / _ \  |__  /  / _ \  | \ | |  / _ \ 
@@ -332,7 +332,7 @@ def banner():
 	   Software Development 
 	Pablo Romanos - @pabloromanos
 	   Hardware Implementation
-	'''
+	''')
 
 def main():
 	
@@ -454,7 +454,7 @@ def main():
 		modules = open(OS_PATH+'/evilgrade/modules.txt', 'r')
 		agent = OS_PATH+'/evilgrade/agent.exe'
 		for line in modules:
-			print line.replace('\n','')		
+			print (line.replace('\n',''))		
 		print ("\n\n[+] Select module to use: ")
 		plugin = raw_input()
 		print ("[+] Thank you! Evilgrade will be executed!")
@@ -495,3 +495,4 @@ def main():
 	print("  [+] CROZONO has finished! Good bye! ;)")
 	
 main()
+
